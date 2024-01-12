@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  application:
+    image: william-cms
+    volumes:
+      - .:/var/www/html
+    network_mode: "host"
+    command: /var/www/html/start.sh
